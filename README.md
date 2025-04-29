@@ -23,4 +23,4 @@ Getting Started:
 * Restart the project
 * Click "Play" and enjoy!
 
-Note: If you happen to run into any issues please join my discord here and reach out to me - 
+Note: If you happen to run into any issues please join my discord here and reach out to me - https://discord.gg/BbDVRMJ2V7
