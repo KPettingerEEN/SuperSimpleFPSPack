@@ -16,16 +16,23 @@ This pack was made from the orginal First Person Shooter template for Unreal Eng
 
 Getting Started:
 
-* Start by opening your "Project Settings" in Unreal after you have added the package to your project of course
+* You will notice that the default world has nothing in it, this is by design
+* Open up the Character folder
+* Create a new level blueprint
+* Add the following objects to the world:
+  
+  1. SkyLight
+  2. Sky Atmosphere
+  3. Directional Light
+  4. Volumetric Clouds
+  5. Player Start
+ 
+* Then you will need to add a landscape or a plane to the level
+* Once the level is saved, go to your "Project Settings" in Unreal after you have added the package to your project of course
 * In the project settings, navigate under "Project" and look for "Maps & Modes"
-* Change your default GameMode to "FPS_GM"
-* Change both the "Editor Startup Map" and "Game Default Map" to "UE_Basic_Open_World"
-* You might want to go into the Demo folder as well and access the Manny skeleton then change the MagSocket location since it is a little off for the animation
-* Here is an image for reference:
-
-  ![image](https://github.com/user-attachments/assets/325045b4-10bf-4337-8d8b-030b39b2a943)
-
+* Change the Startup Map and Default Map to the new level you created
+* The game mode and character should already be set
 * Restart the project
-* Click "Play" and enjoy!
+* Click "Play" and happy building!
 
 Note: If you happen to run into any issues please join my discord here and reach out to me - https://discord.gg/BbDVRMJ2V7
