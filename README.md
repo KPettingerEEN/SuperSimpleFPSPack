@@ -27,8 +27,8 @@ Getting Started:
   4. Volumetric Clouds
   5. Player Start
  
-* Then you will need to add a landscape or a plane to the level
-* Once the level is saved, go to your "Project Settings" in Unreal after you have added the package to your project of course
+* Then you will need to add a landscape or a plane to the level and adjust the player start to be level with the ground
+* Once the level is saved, go to your "Project Settings"
 * In the project settings, navigate under "Project" and look for "Maps & Modes"
 * Change the Startup Map and Default Map to the new level you created
 * The game mode and character should already be set
