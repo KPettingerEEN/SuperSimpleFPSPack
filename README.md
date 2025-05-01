@@ -2,7 +2,7 @@
 
 __This pack was made from the orginal First Person Shooter template for Unreal Engine 5.5 and has been updated to include:__
 
-* A fresh weapon *(M4)* with <u>animations</u> rigged and made with blender and a preset animation blueprint
+* A fresh weapon *(M4)* with animations rigged and made with blender and a preset animation blueprint
 * Completely updated game logic from movement to projectile functionality, including ADS functionality, random recoil, custom animation states (ex. Sprinting) and more
 * An easy to learn HUD
 * A cleaner blueprint system with detailed notes and collapsed nodes in each event graph to make learning easy
@@ -58,5 +58,7 @@ __Migrating the Content Folder:__
 * Click play and enjoy!
 
 *If you run into any issues with migration, it is most likely that the animation blueprint is broken. To fix it you just need to reconnect the corresponding animation sequences to their states within the state machine. This shouldn't happen but sometimes when migrating a project the custom names change, which can cause the links to quite literally break. Typically this happens with Custom Event nodes, Animation Sequences, and variables that are specific to certain actor or class references.*
+
+_____________________________________________________________________________________________
 
 __Note:__ If you happen to run into any issues please join my discord here and reach out to me - https://discord.gg/BbDVRMJ2V7
