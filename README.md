@@ -17,8 +17,13 @@ This pack was made from the orginal First Person Shooter template for Unreal Eng
 Getting Started:
 
 * You will notice that the default world has nothing in it, this is by design
+* You can either follow the steps below to create a new level blueprint OR migrate the content folder using the instructions later on
+
+Creating a New Level Blueprint:
+
 * Open up the Character folder
 * Create a new level blueprint
+* Name it what you want
 * Add the following objects to the world:
   
   1. SkyLight
@@ -34,5 +39,20 @@ Getting Started:
 * The game mode and character should already be set
 * Restart the project
 * Click "Play" and happy building!
+
+Migrating the Content Folder:
+
+* Highlight the "Content" folder by left clicking on it
+* Right click the Content folder and select "Migrate"
+* In the migration menu, ensure that ALL contents of the Character and Demo folder are selected (besides the level)
+* After you confirm, you will have to find the project folder for the project you want to migrate to within your computer storage
+* You must select the "Content" folder for the project in order for the migration to work
+* Once complete close out of the project and open the project you migrated to and you will see the new folder with all of the contents
+* Navigate to the Project Settings
+* Under "Project" look for "Maps & Modes"
+* Change the default game mode to "GM_FPS"
+* Click play and enjoy!
+
+* If you run into any issues with migration, it is most likely that the animation blueprint is broken. To fix it you just need to reconnect the corresponding animation sequences to their states within the state machine. This shouldn't happen but sometimes when migrating a project the custom names change, which can cause the links to quite literally break. Typically this happens with Custom Event nodes, Animation Sequences, and variables that are specific to certain actor or class references.
 
 Note: If you happen to run into any issues please join my discord here and reach out to me - https://discord.gg/BbDVRMJ2V7
