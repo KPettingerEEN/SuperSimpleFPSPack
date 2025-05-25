@@ -2,13 +2,12 @@
 
 __This pack was made from the orginal First Person Shooter template for Unreal Engine 5.5 and has been updated to include:__
 
-* A fresh weapon *(M4)* with animations rigged and made with blender and a preset animation blueprint
-* Completely updated game logic from movement to projectile functionality, including ADS functionality, random recoil, custom animation states (ex. Sprinting) and more
-* An easy to learn HUD
-* A cleaner blueprint system with detailed notes and collapsed nodes in each event graph to make learning easy
-* A data table for creating new weapons with a customizable weapon structure system
-* Animation notify based events and sound cues with custom sounds for making editing easy
-* Set up on the default Unreal Engine Open World map instead of the standard FPS template level for making open world game creation easier
+* An M4 and Pistol - Both Modular and already animated
+* A holographic sight with two different reticles
+* 8 Different Weapon Camo Materials
+* A HUD with a Minimap
+* A Settings menu (Fully Funtional)
+* Shooter AI with Cover Finding Logic
 
 # Instructional
 
@@ -16,31 +15,11 @@ __This pack was made from the orginal First Person Shooter template for Unreal E
 
 Getting Started:
 
-* You will notice that the default world has nothing in it, this is by design
-* You can either follow the steps below to create a new level blueprint OR migrate the content folder using the instructions later on
-
-_____________________________________________________________________________________________
-
-__Creating a New Level Blueprint:__
-
-* Open up the Character folder
-* Create a new level blueprint
-* Name it what you want
-* Add the following objects to the world:
-  
-  1. SkyLight
-  2. Sky Atmosphere
-  3. Directional Light
-  4. Volumetric Clouds
-  5. Player Start
- 
-* Then you will need to add a landscape or a plane to the level and adjust the player start to be level with the ground
-* Once the level is saved, go to your "Project Settings"
-* In the project settings, navigate under "Project" and look for "Maps & Modes"
-* Change the Startup Map and Default Map to the new level you created
-* The game mode and character should already be set
-* Restart the project
-* Click "Play" and happy building!
+* You will notice that I included a video for setting up a basic game with the pack. This video is still relevant and will work even with the updates to the pack. So if you wanted to get started with a free character model and environment pack, make sure you check out that video!
+* Please note that the video uses UE 5.5 assets, and you will need to be on that version to use those packs together. If you want to use this with say a 5.4 metahuman, it will still work. However, the free Character Model and Environment were not built by me so I can't tell you if they work on an earlier engine version or not.
+* I suggest replacing existing buildings by building your own, because the "Stairs" in the Environment pack are not properly angled for Unreal Engine default incline mechanics. If the building does not have any stairs then it really isn't an issue.
+* After you get everything from the video set up, you need to place "Cover Points" and "AI Spawns" on the map for your AI.
+* Below I included instructions for migration in the event that you would like to migrate my project or any parts of it into an existing project of your own.
 
 _____________________________________________________________________________________________
 
