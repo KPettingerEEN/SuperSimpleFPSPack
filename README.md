@@ -23,6 +23,23 @@ __Getting Started:__
 
 _____________________________________________________________________________________________
 
+__Controls:__
+
+Most of the controls are standard for any FPS but I also included controls for switiching between the holographic and ironsights, as well as switching between 3 weapon skins so you can see how it works, those controls are:
+
+* Camo 1: Keyboard Number 1
+* Camo 2: Keyboard Number 2
+* Camo 3: Keyboard Number 3
+* Change Sights: Keyboard Number 4
+* Change Reticle: Left Alt
+* To open the Pause Menu: Escape
+* To open the Settings Menu: Click the Controller Icon in the Pause Menu
+* To load a Saved Game: Click Continue in the Pause Menu
+
+Note: If you want to use other camos, the logic is already there and there are 6 other weapon camos for you to test out. If you want to create a menu for changing camos, you can quite literally use the logic I already set up, you just need to set up bottons to call the events to change the camo to the desired one.
+
+_____________________________________________________________________________________________
+
 __Fixing Issues:__
 
 1. There is an issue with the "Projectiles" that can be fixed using the steps below:
