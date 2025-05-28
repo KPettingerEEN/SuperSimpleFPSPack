@@ -13,13 +13,35 @@ __This pack was made from the orginal First Person Shooter template for Unreal E
 
 * Most instructions for using the package are included within their corresponding blueprint event graphs in the form of comments.
 
-Getting Started:
+__Getting Started:__
 
 * You will notice that I included a video for setting up a basic game with the pack. This video is still relevant and will work even with the updates to the pack. So if you wanted to get started with a free character model and environment pack, make sure you check out that video!
 * Please note that the video uses UE 5.5 assets, and you will need to be on that version to use those packs together. If you want to use this with say a 5.4 metahuman, it will still work. However, the free Character Model and Environment were not built by me so I can't tell you if they work on an earlier engine version or not.
 * I suggest replacing existing buildings by building your own, because the "Stairs" in the Environment pack are not properly angled for Unreal Engine default incline mechanics. If the building does not have any stairs then it really isn't an issue.
 * After you get everything from the video set up, you need to place "Cover Points" and "AI Spawns" on the map for your AI.
 * Below I included instructions for migration in the event that you would like to migrate my project or any parts of it into an existing project of your own.
+
+_____________________________________________________________________________________________
+
+__Fixing Issues:__
+
+1. There is an issue with the "Projectiles" that can be fixed using the steps below:
+
+* Open a Projectile blueprint
+* Click on the Projectile Movement object
+* Change the Initial and Max speed of the projectile to 10000
+* Change the Velocity to 10000
+* Change the "Gravity" to .1 to simulate a slight bullet drop, without messing up the offset of the projectile
+* Finally, click on the "Capsule" object, and change the Scale to .01
+
+
+2. There is an issue with the Projectile Spawning logic for the M4 due to the above issue, and can be resolved using the steps below:
+
+* Open the BP_M4_Modular actor blueprint in the Weapons/M4 folder
+* Delete the arrow from the M4 that is located near the iron sight
+* Then hop over to the BP_Player blueprint
+* Change the projectile spawning logic to use the muzzle arrow instead
+* This will fix any projectile issues that you may have, including close range hit registration issues.
 
 _____________________________________________________________________________________________
 
