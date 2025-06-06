@@ -30,13 +30,12 @@ Most of the controls are standard for any FPS but I also included controls for s
 * Camo 1: Keyboard Number 1
 * Camo 2: Keyboard Number 2
 * Camo 3: Keyboard Number 3
-* Change Sights: Keyboard Number 4
 * Change Reticle: Left Alt
 * To open the Pause Menu: Escape
 * To open the Settings Menu: Click the Controller Icon in the Pause Menu
 * To load a Saved Game: Click Continue in the Pause Menu
 
-Note: If you want to use other camos, the logic is already there and there are 6 other weapon camos for you to test out. If you want to create a menu for changing camos, you can quite literally use the logic I already set up, you just need to set up bottons to call the events to change the camo to the desired one.
+Note: If you want to use other camos, the logic is already there and there are 6 other weapon camos for you to test out. There is also already an event inside the M4 blueprint for attaching and detaching the sight for the weapon. If you want to create a menu for changing camos and attachments, you can quite literally use the logic I already set up, you just need to set up bottons to call the events to change the camo to the desired one.
 
 _____________________________________________________________________________________________
 
