@@ -44,12 +44,13 @@ __Fixing Issues:__
 
 1. There is an issue with the "Projectiles" that can be fixed using the steps below:
 
-* Open a Projectile blueprint
+* Open any Projectile blueprint
 * Click on the Projectile Movement object
 * Change the Initial and Max speed of the projectile to 10000
 * Change the Velocity to 10000
 * Change the "Gravity" to .1 to simulate a slight bullet drop, without messing up the offset of the projectile
 * Finally, click on the "Capsule" object, and change the Scale to .01
+* This should be done for all "Bullet" projectile types.
 
 
 2. There is an issue with the Projectile Spawning logic for the M4 due to the above issue, and can be resolved using the steps below:
@@ -60,6 +61,27 @@ __Fixing Issues:__
 * Change the projectile spawning logic to use the muzzle arrow instead
 * This will fix any projectile issues that you may have, including close range hit registration issues.
 
+
+3. There is an issue with the AI that is addressed within the BP_Soldier blueprint in the AI folder. The issue relates to the way the AI might act if there is not a close enough cover point (within 500 Unreal units or centimeters seems to trigger this).
+
+4. There is an issue with the Pause Menu, where you will not be able to exit the menu with Saving the game to continue first, and can be resolved using the steps below:
+
+_Save Issues_
+
+* Open the BP_Player blueprint, and double click the node that says "Save"
+* Double click on the node that says "Deleting"
+* You will notice I already set up an event for deleting any saved game "Delete Save" - this is for SAVE issues ONLY - Call that event at the very beginning of the "Begin Play" event and it will spawn your character fresh every game
+
+_Pause Issues_
+
+* Open the BP_Player blueprint, and double click the node that says "Pause Menu"
+* You will notice that I already set up events for showing and hiding the menu
+* You will also notice that I only call the Show Pause event for the Escape key
+* Add a "Branch" node before the "Show Pause" event is called
+* The condition for this branch will be the "Paused" boolean that is already set up
+* Connect the Hide Pause event to the "True" value
+* Connect the Show Pause event to the false value
+* Now the Pause Menu works the way it should!
 _____________________________________________________________________________________________
 
 __Migrating the Content Folder:__
